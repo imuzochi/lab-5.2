@@ -1,4 +1,5 @@
 1. preventDefault() stops the browser from reloading the page immediately after getting the info. We can handle how the info is shared/stored now with this preventDefault().
 2. HTML5 validation attributes are very simple, while with JavaScript you have more flexibility to be more specific and do what you like. You can use btoh when you can't find what you're looking for with just HTML5.
 3. To use localStorage, I had to set item to a key and a value. The limitations to it is that sensitive data can be easily itercepted and read from localStorage.
-4. A challenge I faced in implementing real time validation was
+4. A challenge I faced in implementing real time validation was make sure I included all the ways the input could be wrong to check. Also, to make a customer message, you have to do many if-arrays.
+5. To ensure the error messages were user-friendly and displayed at the right times, I made sure I used one error message for each error, so the user knows exactly what is wrong and where they messed up.
