@@ -39,6 +39,14 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box; /* Makes width calculation easier */
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
 }
  
 .form-group input:invalid {
@@ -52,6 +60,16 @@ h1 {
   font-size: 0.9em;
   margin-top: 5px;
   min-height: 1em; /* Reserve space to prevent layout shifts */
+  font-weight: 600;
+}
+
+.form-group input.valid {
+  border-color: #27ae60;
+}
+
+.form-group input.invalid {
+  border-color: #e74c3c;
+  background-color: #fff8f7;
 }
  
 .form-group small {
@@ -74,4 +92,16 @@ button[type="submit"] {
  
 button[type="submit"]:hover {
   background-color: #2980b9;
+}
+
+button[type="submit"]:focus-visible {
+  outline: 3px solid rgba(52, 152, 219, 0.35);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
 }
