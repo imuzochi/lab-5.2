@@ -1,0 +1,2 @@
+1. preventDefault() stops the browser from reloading the page immediately after getting the info. We can handle how the info is shared/stored now with this preventDefault().
+2. HTML5 validation attributes 
